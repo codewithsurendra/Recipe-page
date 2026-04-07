@@ -1,0 +1,153 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f3e6d8;
+    font-size: 1.6rem;
+    color: #302d2c;
+    line-height: 1.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif', sans-serif;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #854632;
+}
+
+.prep-time span,
+.instructions span {
+    font-weight: bold;
+}
+
+#recipe-container {
+    background-color: #ffffff;
+    margin: 5rem auto;
+    width: 90%;
+    max-width: 90rem;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.recipe h1 {
+    font-size: 2.5rem;
+    color: #302d2c;
+}
+
+.recipe-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.prep-time {
+    padding: 2rem;
+    background-color: #fff7fc;
+    border-radius: 5px;
+}
+
+.prep-time h3 {
+    color: #7b284f;
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+}
+
+ul li,
+ol li {
+    padding-left: 2rem;
+}
+
+.ingredients,
+.instructions {
+    border-bottom: 2px solid #e4ded8;
+    padding-bottom: 3rem;
+}
+
+.instructions li::marker,
+.nutrients td {
+    font-weight: bold;
+    color: #854632;
+}
+
+.nutrients {
+    margin: 2rem;
+    border-collapse: collapse;
+}
+
+.nutrients th {
+    padding: 1rem 10rem 1rem 3rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.nutrients td {
+    padding-right: 10rem;
+    text-align: right;
+}
+
+.nutrients tr {
+    border-bottom: 2px solid #e4ded8;
+}
+
+.attribution {
+    font-size: 2rem;
+}
+
+.attribution a {
+    color: #787878;
+}
+
+@media only screen and (max-width: 790px) {
+    html {
+        font-size: 56.3%;
+    }
+
+    #recipe-container {
+        margin: 2rem auto;
+        width: 90%;
+        max-width: 600px;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+
+    #recipe-container {
+        margin: 1rem auto;
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+}
